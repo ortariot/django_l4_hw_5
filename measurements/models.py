@@ -26,7 +26,7 @@ class Measurement(AutoDate):
 
     value = models.FloatField()
     project = models.ForeignKey(Project, on_delete=models.CASCADE)
-    screen = models.ImageField(upload_to="img/%Y/%m/%d/",
+    screen = models.ImageField(upload_to="files",
                                null=True,
                                blank=False,
                                )

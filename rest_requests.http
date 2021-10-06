@@ -38,9 +38,8 @@ POST http://localhost:8000/api/v1/measurment/
 Content-Type: application/json
 
 { 
-  "value": 22.1,
-  "project": 10,
-  "screen": ""
+  "value": 133.1,
+  "project": 5
  }
 
 ######################

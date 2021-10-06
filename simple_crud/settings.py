@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-MEDIA_ROOT = "/img/"
+MEDIA_ROOT = "img"
 
 # Application definition
 
