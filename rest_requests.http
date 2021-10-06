@@ -3,9 +3,9 @@
 POST http://localhost:8000/api/v1/project/
 Content-Type: application/json
 
-{ "name": "sci",
+{ "name": "str",
   "latitude": 11.1,
-  "longitude": 11.2,
+  "longitude": 11.2
 }
 
 ######################
@@ -15,7 +15,7 @@ Content-Type: application/json
 
 
 ######################
-PUT http://localhost:8000/api/v1/project/1/
+PUT http://localhost:8000/api/v1/project/4/
 Content-Type: application/json
 
 { 
@@ -26,38 +26,39 @@ Content-Type: application/json
 
 
 ######################
-DELETE  http://localhost:8000/api/v1/project/1/
+DELETE  http://localhost:8000/api/v1/project/8/
 Content-Type: application/json
 
 
 
 ######################
-# measurment
+# measurement
 ######################
-POST http://localhost:8000/api/v1/measurment/
+POST http://localhost:8000/api/v1/measurement/
 Content-Type: application/json
 
 { 
   "value": 133.1,
-  "project": 5
+  "project": 7,
+  "screen" : "d:\\m.jpg"
  }
 
 ######################
-GET http://localhost:8000/api/v1/measurment/
+GET http://localhost:8000/api/v1/measurement/
 Content-Type: application/json
 
 
 
 ######################
-PUT http://localhost:8000/api/v1/measurment/1/
+PUT http://localhost:8000/api/v1/measurement/7/
 Content-Type: application/json
 
 { 
   "value": 22.7,
-  "project": 1
+  "project": 7
 }
 
 ######################
-DELETE  http://localhost:8000/api/v1/measurment/1/
+DELETE  http://localhost:8000/api/v1/measurement/7/
 Content-Type: application/json
 
