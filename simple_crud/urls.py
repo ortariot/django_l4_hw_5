@@ -20,12 +20,15 @@ from rest_framework.routers import DefaultRouter
 from measurements.views import ProjectViewSet, MeasurementViewSet
 
 
-router = DefaultRouter()
-router.register("", ProjectViewSet)
+prj_router = DefaultRouter()
+prj_router.register("", ProjectViewSet)
+measure_router = DefaultRouter()
+measure_router.register("", MeasurementViewSet)
 
 # TODO: настройте роутер и подключите `ProjectViewSet` и `MeasurementViewSet`
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/v1/project/', include(router.urls))
+    path('api/v1/project/', include(prj_router.urls)),
+    path('api/v1/measurment/', include(measure_router.urls))
 ]

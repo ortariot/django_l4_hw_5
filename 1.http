@@ -1,4 +1,0 @@
-POST http://localhost:8000/api/v1/project/
-Content-Type: application/json
-
-{ "name": "mraz", "latitude": 0.1, "longitude': 11.2 }
